@@ -22,23 +22,27 @@
         }
         .banner-img{
             height: 35rem;
-            filter: brightness(50%);
+            filter: brightness(70%);
         }
         .e-learning{
           background-color: rgba(135, 207, 235, 0.192);
           
         }
-        @media screen and (max-width: 576px) {
-            .banner-img{
-                height: 10rem;
-            }
+       
+        @media screen  and (max-width:576px){
+          .banner-img{
+            height: 10rem;
+          }
         }
-
         @media screen and (max-width:992px) {
           .banner-img{
             height: 22rem;
           }
+          .middle{
+              text-align: center;
+            }
         }
+        
         
     </style>
 </head>
@@ -51,7 +55,7 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
               <a class="navbar-brand text-info font-monospace fs-3 fw-bolder" href="#">getCode.</a>
-              <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -83,62 +87,62 @@
           </nav>
 
             <!-- Banner starts here -->
+
+
+
+             
             <section class="container">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
-                    
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img  src="images/cover/cover-1.jpg" class="d-block w-100 banner-img " alt="...">
-                        <div class="carousel-caption banner-caption h-75 d-flex justify-content-center align-items-center d-block">
-                            <div>
-                                <h1>Get started Digital</h1>
-                                <h2>Learning</h2>   
-                                <p class="fs-6 fw-light text-white-50 my-3">Quickly get a project started with any of our examples</p> <p class="fs-6 fw-light text-white-50 d-none d-lg-block">ranging from using parts of the framework to custom components. Consequatur eius odit facere ipsam debitis exercitationem voluptatibus vitae</p>
-                                <button class="btn btn-info border-white text-white py-2 px-4">Get started</button>
-                            </div>
+               
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img  src="images/cover/cover-1.jpg" class="d-block w-100 banner-img " alt="...">
+                    <div class="carousel-caption banner-caption h-100 d-flex justify-content-center align-items-center d-block">
+                        <div>
+                            <h1>Get Started Digital</h1>
+                            <h1>Learning</h1>
+                            <span class="fs-6 fw-light text-white-50 d-block my-3">We’re a nonprofit with the mission to provide a free, world-class education for anyone, . <span class="d-none d-lg-block ">90% of US teachers who have used Khan Academy have found us effective</span> </span>
+                            <button class="btn btn-info border-white text-white py-2 px-4">Get started</button>
                         </div>
-                      </div>
-                      
-                      <div class="carousel-item active">
-                        <img  src="images/cover/cover-3.jpg" class="d-block w-100 banner-img " alt="...">
-                        <div class="carousel-caption banner-caption h-75 d-flex justify-content-center align-items-center d-block">
-                            <div>
-                                <h1>Get started Digital</h1>
-                                <h2>Learning</h2>
-                                <p class="fs-6 fw-light text-white-50 my-3">Quickly get a project started with any of our examples</p> <p class="fs-6 fw-light text-white-50 d-none d-lg-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eius odit facere ipsam debitis exercitationem voluptatibus vitae</p>
-                                <button class="btn btn-info border-0 text-white py-2 px-4">Get started</button>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="carousel-item active">
-                        <img  src="images/cover/cover-3.jpg" class="d-block w-100 banner-img " alt="...">
-                        <div class="carousel-caption banner-caption h-75 d-flex justify-content-center align-items-center d-block">
-                            <div>
-                                <h1>Get started Digital</h1>
-                                <h2>Learning</h2>
-                                <p class="fs-6 fw-light text-white-50 my-3">Quickly get a project started with any of our examples</p> <p class="fs-6 fw-light text-white-50 d-none d-lg-block">ranging from using parts of the framework to custom componentsConsequatur eius odit facere ipsam debitis exercitationem voluptatibus vitae.</p>
-                                <button class="btn btn-info border-white text-white py-2 px-4">Get started</button>
-                            </div>
-                        </div>
-                      </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
                   </div>
-
+                  <div class="carousel-item">
+                    <img  src="images/cover/cover-2.jpg" class="d-block w-100 banner-img " alt="...">
+                        <div class="carousel-caption banner-caption h-100 d-flex justify-content-center align-items-center d-block">
+                            <div>
+                                <h1>Get Started Digital</h1>
+                                <h1>Learning</h1>
+                                <span class="fs-6 fw-light text-white-50 d-block my-3">We’re a nonprofit with the mission to provide a free, world-class education for anyone, . <span class="d-none d-lg-block ">90% of US teachers have found us effective</span> </span>
+                                <button class="btn btn-info border-white text-white py-2 px-4">Get started</button>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img  src="images/cover/cover-3.jpg" class="d-block w-100 banner-img " alt="...">
+                        <div class="carousel-caption banner-caption h-100 d-flex justify-content-center align-items-center d-block">
+                            <div>
+                                <h1>Get Started Digital</h1>
+                                <h1>Learning</h1>
+                                <span class="fs-6 fw-light text-white-50 d-block my-3">We’re a nonprofit with the mission to provide a free, world-class education for anyone, .<span class="d-none d-lg-block ">90% of US teachers who have used Khan Academy have found us effective</span> </span>
+                                <button class="btn btn-info border-white text-white py-2 px-4">Get started</button>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </section>
     </header>
     <!-- header ends here -->
@@ -148,77 +152,93 @@
         <section class="container my-5">
 
             <div class="text-center p-2">
-                <h1>Discover Our Popular</h1>
-                <h1>Courses</h1>
-                <span class="d-block fs-6 fw-light text-secondary mt-3">examples ranging from using parts of the framework to custom components.</span>
-                <span class="d-block fs-6 fw-light text-secondary mb-3">ranging from using parts of the framework to custom components.</span>
+                <h1>Discover Our Popular Courses</h1>
+                <h1></h1>
+                <span class="d-block fs-6 fw-light text-secondary mt-3">Students practice at their own pace, first filling in gaps in their<br>understanding and then accelerating their learning.
+                </span>
+                
             </div>
 
-            <div>
-                <div class="row g-4 my-5 py-3">
+             <div>
+                <div class="row g-4 m-4 p-4">
                     <div class="col-lg-6 col-md-12">
                         <div class="card d-flex flex-lg-row flex-md-row  flex-sm-column " >
                             <img src="images/course/course-1.png" class="card-img-top"  alt="...">
-                            <div class="card-body my-auto">
-                              <h3 class="card-title ">Fundamental of UI/UX design</h3>
-                              <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="card-body my-auto lh-1">
+                              <h5 class="card-title ">1. CS101: Introduction to Programming</h5>
+                              <p class="card-text my-2 text-secondary">Learn the ins and outs of one of the fastest-growing programming languages around.</p>
                               <span class="text-info fw-bold">Price : 30$</span>
                             </div>
                           </div>
                     </div>
+                    
                     <div class="col-lg-6 col-md-12">
-                        <div class="card d-flex flex-lg-row  flex-md-row flex-sm-column" >
-                            <img src="images/course/course-2.png" class="card-img-top" alt="...">
-                            <div class="card-body my-auto">
-                              <h3 class="card-title">Fundamental of UI/UX design</h3>
-                              <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <span class="text-info fw-bold">Price : 30$</span>
+                        <div class="card d-flex flex-lg-row flex-md-row  flex-sm-column " >
+                            <img src="images/course/course-2.png" class="card-img-top"  alt="...">
+                            <div class="card-body my-auto lh-1">
+                              <h5 class="card-title ">
+                                2. CS102: Data Structures and Algorithms</h5>
+                              <p class="card-text my-2 text-secondary">Learn the ins and outs of one of the fastest-growing programming languages around.</p>
+                              <span class="text-info fw-bold">Price : 40$</span>
                             </div>
                           </div>
                     </div>
+                    
                     <div class="col-lg-6 col-md-12">
-                        <div class="card d-flex flex-lg-row  flex-md-row flex-sm-column" >
-                            <img src="images/course/course-3.png" class="card-img-top" alt="...">
-                            <div class="card-body my-auto">
-                              <h3 class="card-title">Fundamental of UI/UX design</h3>
-                              <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="card d-flex flex-lg-row flex-md-row  flex-sm-column " >
+                            <img src="images/course/course-3.png" class="card-img-top"  alt="...">
+                            <div class="card-body my-auto lh-1">
+                              <h5 class="card-title ">
+                                3. CS103: Databases</h5>
+                              <p class="card-text my-2 text-secondary">Learn the ins and outs of one of the fastest-growing programming languages around.</p>
+                              <span class="text-info fw-bold">Price : 20$</span>
+                            </div>
+                          </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card d-flex flex-lg-row flex-md-row  flex-sm-column " >
+                            <img src="images/course/course-4.png" class="card-img-top"  alt="...">
+                            <div class="card-body my-auto lh-1">
+                              <h5 class="card-title ">
+                                4. CS104: Computer Architecture</h5>
+                              <p class="card-text my-2 text-secondary">Learn the ins and outs of one of the fastest-growing programming languages around.</p>
                               <span class="text-info fw-bold">Price : 30$</span>
                             </div>
                           </div>
                     </div>
-                    <div class="col-lg-6 d-none d-lg-block">
-                        <div class="card d-flex flex-lg-row flex-md-row flex-sm-column" >
-                            <img src="images/course/course-4.png" class="card-img-top" alt="...">
-                            <div class="card-body my-auto">
-                              <h3 class="card-title">Fundamental of UI/UX design</h3>
-                              <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <span class="text-info fw-bold">Price : 30$</span>
+                    
+                    <div class="col-lg-6 col-md-12 d-none d-lg-block">
+                        <div class="card d-flex flex-lg-row flex-md-row  flex-sm-column " >
+                            <img src="images/course/course-5.png" class="card-img-top"  alt="...">
+                            <div class="card-body my-auto lh-1">
+                              <h5 class="card-title ">
+                                5. CS105: Discrete Math</h5>
+                              <p class="card-text my-2 text-secondary">Learn the ins and outs of one of the fastest-growing programming languages around..</p>
+                              <span class="text-info fw-bold">Price : 32$</span>
                             </div>
                           </div>
                     </div>
-                    <div class="col-lg-6 d-none d-lg-block">
-                        <div class="card d-flex flex-lg-row flex-md-row flex-sm-column" >
-                            <img src="images/course/course-5.png" class="card-img-top" alt="...">
-                            <div class="card-body my-auto">
-                              <h3 class="card-title">Fundamental of UI/UX design</h3>
-                              <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <span class="text-info fw-bold">Price : 30$</span>
+                    
+                    <div class="col-lg-6 col-md-12 d-none d-lg-block">
+                        <div class="card d-flex flex-lg-row flex-md-row  flex-sm-column " >
+                            <img src="images/course/course-6.png" class="card-img-top"  alt="...">
+                            <div class="card-body my-auto lh-1">
+                              <h5 class="card-title ">6. CS106: Fundamental of UI/UX design</h5>
+                              <p class="card-text my-2 text-secondary">Learn the ins and outs of one of the fastest-growing programming languages around.</p>
+                              <span class="text-info fw-bold">Price : 31$</span>
                             </div>
                           </div>
                     </div>
-                    <div class="col-lg-6 d-none d-lg-block">
-                        <div class="card d-flex flex-lg-row  flex-md-row flex-sm-column" >
-                            <img src="images/course/course-6.png" class="card-img-top" alt="...">
-                            <div class="card-body my-auto">
-                              <h3 class="card-title">Fundamental of UI/UX design</h3>
-                              <p class="card-text my-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <span class="text-info fw-bold">Price : 30$</span>
-                            </div>
-                          </div>
-                    </div>
+                    
+
+
+                    
                 </div>
             </div>
 
+
+      
             <div class="text-center py-5">
                 <button class="btn btn-info py-2 px-4 text-white">See more courses</button>
             </div>
@@ -236,8 +256,8 @@
             <div class="col-lg-7 col-md-6 py-5 px-4">
               <h2>Explore The E-learning </h2>
               <h2>Institute</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusantium provident iste odit illum repudiandae minus molestias quos tenetur similique itaque soluta dolorum vitae fuga nemo nisi est, voluptatem non.</p>
-              <p class="d-lg-block d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto explicabo quidem inventore, optio deleniti dolores</p>
+              <p>If tech is a gold mine, Computer Science is your shovel. Fortunately, this Path teaches you college-level fundamentals, so you can start thinking and coding like a professional in no time.</p>
+              <p class="d-lg-block d-none">Grow and apply your problem-solving skills to write clean code from the get-go.</p>
 
               <div class="row d-flex justify-space-between">
                 <div class="col-lg-4 col-md-6"> 
@@ -261,54 +281,56 @@
         <!-- E-learning section ends here  -->
 
         <!-- Modal section starts here -->
-          <section class="container text-white bg-primary my-5 p-5">
-              <div class="d-flex flex-column flex-lg-row  justify-content-between  align-items-center">
-                <div class="text-center">
-                    <h1>Ready To Join!</h1>
-                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Laborum itaque accusantium vel laudantium voluptate eos.</span>
-                </div>
-                <div>
-                    
+        
+        <section class="container text-white bg-primary my-5 p-5">
+          <div class="d-flex flex-column flex-lg-row  justify-content-between  align-items-center">
+            <div class="middle">
+                <h3>Join Now!</h3>
+                <span>Ready for a career in coding?</span>
+            </div>
+            <div>
+                
 
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn text-primary py-2 m-4 px-5 bg-white border " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      Register
-                    </button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn text-primary py-2 m-4 px-5 bg-white border " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Register
+                </button>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel"></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            <form class="d-flex flex-column align-items-center" action="">
-                              <h3 class="text-dark">Register Now</h3>
-                              <input class="w-75 my-2" type="Email" placeholder="Enter your email" >
-                              <input class="w-75 my-2"  type="Password" placeholder="password">
-                              <button class="btn btn-primary w-25">Submit</button>
-                            </form>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
-                        </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form class="d-flex flex-column align-items-center" action="">
+                          <h3 class="text-dark">Register Now</h3>
+                          <input class="w-75 my-2" type="Email" placeholder="Enter your email" >
+                          <input class="w-75 my-2"  type="Password" placeholder="password">
+                          <button class="btn btn-primary w-25">Submit</button>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                       </div>
                     </div>
+                  </div>
                 </div>
-              </div>
-          </section>
+            </div>
+          </div>
+      </section>
         <!-- Modal section ends here -->
         <!-- Success story section starts here -->
 
         <section class="container py-5">
           <div class="">
             <h3>Meet Our Successful Students</h3>
-            <span class="d-block fs-6 fw-light text-secondary mt-3">examples ranging from using parts of the framework to custom components.</span>
-            <span class="d-block fs-6 fw-light text-secondary mb-3">ranging from using parts of the framework to custom components.</span>
+            <span class="d-block fs-6 fw-light text-secondary mt-3">
+              It’s not uncommon for learners to land web development jobs within 6 months.</span>
+            <span class="d-block fs-6 fw-light text-secondary mb-3">You can find how and read more in-depth success stories in the community forums.</span>
           </div>
         
         <div class="row my-5">
@@ -325,17 +347,8 @@
             <div class="card">
               <img src="images/student/student-2.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Ahmed Hussain</h5>
-                <p class="card-text">UI/UX designer</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <img src="images/student/student-3.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Ahmed Hussain</h5>
-                <p class="card-text">UI/UX designer</p>
+                <h5 class="card-title">Jannatul Islam</h5>
+                <p class="card-text">Web designer</p>
               </div>
             </div>
           </div>
@@ -343,8 +356,17 @@
             <div class="card">
               <img src="images/student/student-4.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Ahmed Hussain</h5>
-                <p class="card-text">UI/UX designer</p>
+                <h5 class="card-title">Asma Akhter</h5>
+                <p class="card-text">Full stack developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img src="images/student/student-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Minhaz Uddin Ahmed</h5>
+                <p class="card-text">Graphic designer</p>
               </div>
             </div>
           </div>
@@ -363,8 +385,8 @@
 
             <div class="col">
               <div class="text-center">
-                <h1>Some Students</h1>
-                <span class="d-block fs-6 fw-light text-secondary mt-3">examples ranging from using parts of the framework to custom components.</span>
+                <h1>Some Student's Feedback </h1>
+                <span class="d-block fs-6 fw-light text-secondary mt-3">It is a long established fact that a reader will be distracted by the readable<br>content of a page when looking at its layout.</span>
             </div>
             </div>
 
@@ -384,14 +406,14 @@
                               <i class="fa-solid fa-star text-secondary"></i>
                             </div>
                         </div>
-                        <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ducimus necessitatibus. Non iste quam quaerat exercitationem dolor, vitae necessitatibus voluptatibus mollitia dignissimos libero maiores, dolorem eius iusto reiciendis alias ea.</p>
+                        <p class="my-3">“Coding literally turned my life around. It is one of the most rewarding careers I’ve had to date. Once you get in,there are so many paths that fall under the IT umbrella that it can be confusing to a newcomer.”</p>
                         <div class="d-flex flex-row  justify-content-start my-3">
                             <div>
                               <img src="images/student/student-6.png" class="me-3"  alt="">
                             </div>
                             
                             <div>
-                              <h6 class="mt-1">Ahmed Hussain</h6>
+                              <h6 class="mt-1">Afia Rahman</h6>
                              <small>UI designer</small>
                             </div>
                         </div>
@@ -409,7 +431,7 @@
                               <i class="fa-solid fa-star text-secondary"></i>
                             </div>
                         </div>
-                        <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ducimus necessitatibus. Non iste quam quaerat exercitationem dolor, vitae necessitatibus voluptatibus mollitia dignissimos libero maiores, dolorem eius iusto reiciendis alias ea.</p>
+                        <p class="my-3">"Computer programming is a vast and evolving industry.The best advice I can offer to someone looking for a career in IT would be to narrow down what they really want to do"</p>
                         <div class="d-flex flex-row  justify-content-start my-3">
                             <div>
                               <img src="images/student/student-5.png" class="me-3"  alt="">
@@ -417,7 +439,7 @@
                             
                             <div>
                               <h6 class="mt-1">Ahmed Hussain</h6>
-                             <small>UI designer</small>
+                             <small>Web designer</small>
                             </div>
                         </div>
                       </div>
@@ -437,14 +459,14 @@
                               <i class="fa-solid fa-star text-secondary"></i>
                             </div>
                         </div>
-                        <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ducimus necessitatibus. Non iste quam quaerat exercitationem dolor, vitae necessitatibus voluptatibus mollitia dignissimos libero maiores, dolorem eius iusto reiciendis alias ea.</p>
+                        <p class="my-3">"Computer programming is a vast and evolving industry. The best advice I can offer to someone looking for a career in IT would be to narrow down what they really want to do"</p>
                         <div class="d-flex flex-row  justify-content-start my-3">
                             <div>
                               <img src="images/student/student-5.png" class="me-3"  alt="">
                             </div>
                             
                             <div>
-                              <h6 class="mt-1">Ahmed Hussain</h6>
+                              <h6 class="mt-1">Afia Rahman</h6>
                              <small>UI designer</small>
                             </div>
                         </div>
@@ -462,7 +484,7 @@
                               <i class="fa-solid fa-star text-secondary"></i>
                             </div>
                         </div>
-                        <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ducimus necessitatibus. Non iste quam quaerat exercitationem dolor, vitae necessitatibus voluptatibus mollitia dignissimos libero maiores, dolorem eius iusto reiciendis alias ea.</p>
+                        <p class="my-3">“Coding literally turned my life around. It is one of the most rewarding careers I’ve had to date. Once you get in,there are so many paths that fall under the IT umbrella that it can be confusing to a newcomer.”</p>
                         <div class="d-flex flex-row  justify-content-start my-3">
                             <div>
                               <img src="images/student/student-6.png" class="me-3"  alt="">
@@ -470,7 +492,7 @@
                             
                             <div>
                               <h6 class="mt-1">Ahmed Hussain</h6>
-                             <small>UI designer</small>
+                             <small>Web designer</small>
                             </div>
                         </div>
                       </div>
@@ -500,7 +522,7 @@
                     <div class="col-lg-6 mx-auto my-5">
                         <div class="text-center">
                             <h1>Frequently Asked Questions</h1>
-                            <span class="d-block fs-6 fw-light text-secondary mt-3">examples ranging from using parts of the framework to custom components.</span>
+                            <span class="d-block fs-6 fw-light text-secondary mt-3">Study these diligently and understand how you should approach the questions and answer them in an effective manner.</span>
                         </div>
                     </div>
 
@@ -510,48 +532,48 @@
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Accordion Item #1
+                                  Q1. What are the difference between flexbox and grid?
                                 </button>
                               </h2>
                               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  <strong> Ans.</strong> Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
                                 </div>
                               </div>
                             </div>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  Accordion Item #2
+                                  Q2. What are the difference between bootstrap and tailwind?
                                 </button>
                               </h2>
                               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  <strong>Ans.</strong> Bootstrap comes with a set of pre-styled responsive, mobile-first components that possess a definite UI kit. Tailwind CSS uses a set of utility classes to create a neat UI with more flexibility and uniqueness. Sites created using Bootstrap follow the generic pattern that makes them look identical.
                                 </div>
                               </div>
                             </div>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                  Accordion Item #3
+                                  Q3. What is css box-model?
                                 </button>
                               </h2>
                               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  <strong>Ans.</strong> In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
                                 </div>
                               </div>
                             </div>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                  Accordion Item #3
+                                  Q4. What is a semantic tag?
                                 </button>
                               </h2>
                               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                  <strong>Ans.</strong> The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages
                                 </div>
                               </div>
                             </div>
@@ -615,9 +637,9 @@
                    <div class="text-center text-white-50 d-flex flex-column">
 
                     <h1 class="text-info">getCode.</h1>
-                    <small>Office 41, Zawaya Buildin, Ghala Muscot</small>
-                    <small>Sultanate of Oman</small>
-                    <small>Privacy Policy : Term of use</small>
+                    <small> Level-4, 34, Awal Centre, Banani, Dhaka</small>
+                    <small> Helpline : 01322810867 , 01322810873</small>
+                    <small>(Available : Sat - Thu, 10:00 AM to 7:00 PM)</small>
 
                     <div class="d-flex justify-content-center text-white my-2 fs-5 ">
                       <i class="fa-brands fa-facebook mx-2"></i>
